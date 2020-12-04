@@ -207,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607098589656
+    "lastModifiedOn": 1607110234540
   },
   "creationTag": {
     "versionNumber": 0,
@@ -221,11 +221,10 @@
     "lastModifiedOn": 1606162578078
   },
   "description": "#Bank Next Best Action\n## Multiclass Prediction\n\nWith a large pool of customers and range of communication channels and messages, how do we know who to target with which channel and which message?\n\nThe project\u0027s Wiki [link](http://localhost:10000/projects/NEXTBESTACTION/wiki/1/Next%20Best%20Action%20Wiki) provides more details",
-  "shortDesc": "The project *Next Best Action* was created by Suresh on Nov 23rd 2020",
+  "shortDesc": "Segment customers and decide next best comunication channel and message",
   "tags": [
     "Use case:marketing",
-    "nextbestaction",
-    "imported"
+    "nextbestaction"
   ],
   "customFields": {
     "gdpr_forbid_dataset_sharing": false,
