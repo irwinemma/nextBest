@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 4,
+              "top": 1,
               "left": 0,
               "width": 12,
               "height": 4
@@ -30,10 +30,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 8,
+              "top": 5,
               "left": 0,
               "width": 12,
-              "height": 3
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -55,10 +55,10 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 2,
+              "top": 0,
               "left": 1,
               "width": 9,
-              "height": 2
+              "height": 1
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -81,11 +81,11 @@
   "name": "Next Best Action\u0027s Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607115084843
+    "lastModifiedOn": 1607115097320
   },
   "creationTag": {
     "versionNumber": 0,
