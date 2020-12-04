@@ -59,14 +59,14 @@
   ],
   "owner": "admin",
   "listed": true,
-  "name": "Next Best Action\u0027s default dashboard",
+  "name": "Next Best Action\u0027s Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607098836702
+    "lastModifiedOn": 1607098844055
   },
   "creationTag": {
     "versionNumber": 0,
