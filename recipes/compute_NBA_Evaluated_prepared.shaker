@@ -1,0 +1,95 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "proba_sms gift",
+          "proba_email destination",
+          "proba_email discount",
+          "proba_email gift",
+          "proba_mail destination",
+          "proba_mail discount",
+          "proba_mail gift",
+          "proba_no action",
+          "proba_sms destination",
+          "proba_sms discount",
+          "action"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "income": 100,
+    "proba_email destination": 211,
+    "proba_email gift": 162,
+    "proba_sms gift": 162,
+    "touchpoints": 300,
+    "marital": 100,
+    "nTouchpoints": 105,
+    "proba_mail destination": 204,
+    "proba_email discount": 190,
+    "proba_mail gift": 162,
+    "prediction": 134,
+    "action": 134,
+    "proba_sms discount": 176,
+    "prediction_correct": 150,
+    "age": 100,
+    "creditRating": 105,
+    "aveSpend": 100,
+    "proba_sms destination": 197,
+    "proba_mail discount": 183,
+    "proba_no action": 162
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

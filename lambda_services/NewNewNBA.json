@@ -1,0 +1,49 @@
+{
+  "name": "NewNewNBA",
+  "endpoints": [
+    {
+      "modelRef": "YnF9WvHY",
+      "useJava": false,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "shapleyBackgroundSize": 100,
+        "subChunkSize": 5000
+      },
+      "testQueries": [
+        {
+          "name": "NBA_PyTest #1",
+          "q": {
+            "features": {
+              "age": 47,
+              "marital": "married",
+              "income": 60000,
+              "creditRating": "A",
+              "aveSpend": 19.89,
+              "touchpoints": "mailDestination emailDestination emailDestination",
+              "nTouchpoints": 3,
+              "action": "sms gift"
+            }
+          }
+        }
+      ],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "NewNewNBA",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "publicAccess": true,
+  "authRealm": {
+    "queryKeys": []
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

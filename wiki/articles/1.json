@@ -1,0 +1,24 @@
+{
+  "name": "Next Best Action Wiki",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 16,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1606840227038
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1606837423558
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

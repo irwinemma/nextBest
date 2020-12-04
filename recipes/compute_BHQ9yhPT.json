@@ -1,0 +1,116 @@
+{
+  "type": "export",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "clearOutputPartition": false,
+    "exportParams": {
+      "destinationType": "CUSTOM_MANAGED",
+      "temporaryFileBehavior": "AUTO",
+      "originatingOptionId": "tableau-export_upload-b9725f4c7cc8814e6c3b87ba18caf53b",
+      "format": {
+        "type": "csv",
+        "params": {
+          "style": "excel",
+          "charset": "utf8",
+          "separator": "\t",
+          "quoteChar": "\"",
+          "escapeChar": "\\",
+          "dateSerializationFormat": "ISO",
+          "arrayMapFormat": "json",
+          "hiveSeparators": [
+            "\u0002",
+            "\u0003",
+            "\u0004",
+            "\u0005",
+            "\u0006",
+            "\u0007",
+            "\b"
+          ],
+          "skipRowsBeforeHeader": 0,
+          "parseHeaderRow": false,
+          "skipRowsAfterHeader": 0,
+          "probableNumberOfRecords": 0,
+          "normalizeBooleans": false,
+          "normalizeDoubles": true,
+          "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+          "readMissingColumnsBehavior": "DISCARD_SILENT",
+          "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+          "fileReadFailureBehavior": "FAIL",
+          "compress": ""
+        }
+      },
+      "destinationDatasetProjectKey": "NEXTBESTACTION",
+      "overwriteDestinationDataset": false,
+      "exporterType": "exporter_tableau-export-v2_tableau-export_upload",
+      "config": {
+        "project": "default",
+        "output_table": "DSS_extract"
+      },
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "selectedPartitions": [],
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "NBA_Evaluated",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "BHQ9yhPT",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1606842200544
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1606839702468
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

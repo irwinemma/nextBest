@@ -1,0 +1,136 @@
+{
+  "projectKey": "NEXTBESTACTION",
+  "id": "EVALUATIONWITHGROUNDTRUTH",
+  "type": "step_based",
+  "name": "NBAEvaluationWithGroundTruth",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 11,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1606850730076
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [
+    {
+      "id": "p3jjzhqe",
+      "type": "ds_modified",
+      "delay": 900,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "NEXTBESTACTION_TEST_1",
+            "partitionsSpec": ""
+          }
+        ]
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "build_2_false_d_NBA_Evaluated_d_NBA_Evaluated_Metrics",
+        "type": "build_flowitem",
+        "name": "NBA Model Metrics and Predictions",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "NBA_Evaluated",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "NBA_Evaluated_Metrics",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "NBA_Evaluated_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": false,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "check_true_d_NBA_Evaluated_Metrics",
+        "type": "check_dataset",
+        "name": "Accuracy Check",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "DATASET",
+              "itemId": "NBA_Evaluated_Metrics",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": true,
+          "proceedOnFailure": true
+        }
+      },
+      {
+        "id": "refresh_chart_cache_tOoRYK2",
+        "type": "refresh_chart_cache",
+        "name": "Predictions Dashboard",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": true,
+          "dashboards": [
+            {
+              "smartName": "tOoRYK2",
+              "name": "Next Best Action\u0027s default dashboard"
+            }
+          ],
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

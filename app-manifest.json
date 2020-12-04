@@ -1,0 +1,66 @@
+{
+  "projectExportManifest": {
+    "exportUploads": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": true,
+    "exportManagedFS": false,
+    "exportAnalysisModels": false,
+    "exportSavedModels": false,
+    "exportManagedFolders": false,
+    "exportAllInputManagedFolders": false,
+    "exportInsightsData": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [
+      {
+        "id": "YnF9WvHY",
+        "name": "Next Best Action"
+      }
+    ],
+    "includedManagedFolders": [],
+    "exportGitRepository": false
+  },
+  "instanceFeatures": {
+    "showFlowNavLink": false,
+    "showLabNavLink": false,
+    "showCodeNavLink": false,
+    "showVersionControlFeatures": false
+  },
+  "useAppHomepage": true,
+  "homepageSections": [
+    {
+      "sectionTitle": "Upload File",
+      "tiles": [
+        {
+          "datasetName": "NEXTBESTACTION_TEST_1",
+          "behavior": "INLINE_UPLOAD_ONLY",
+          "type": "UPLOAD_DATASET_SET_FILE",
+          "prompt": "Pls upload the customer file"
+        },
+        {
+          "scenarioId": "EVALUATIONWITHGROUNDTRUTH",
+          "type": "SCENARIO_RUN",
+          "prompt": "runtheflow"
+        },
+        {
+          "dashboardId": "tOoRYK2",
+          "type": "DASHBOARD_LINK",
+          "prompt": "Next Best Action Dashboard"
+        },
+        {
+          "dashboardId": "tOoRYK2",
+          "format": {
+            "paperSize": "A4",
+            "orientation": "LANDSCAPE",
+            "fileType": "PDF"
+          },
+          "type": "DOWNLOAD_DASHBOARD_EXPORT",
+          "prompt": "Download Predictions"
+        }
+      ]
+    }
+  ],
+  "label": "Next Best Action",
+  "shortDesc": "The template *Next Best Action* was created by Administrator on Dec 01st 2020",
+  "tags": [],
+  "instantiationPermission": "USE_APP_MASTER_PERMISSIONS"
+}
