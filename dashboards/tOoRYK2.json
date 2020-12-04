@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 4,
               "left": 0,
               "width": 12,
               "height": 4
@@ -30,7 +30,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 4,
+              "top": 8,
               "left": 0,
               "width": 12,
               "height": 3
@@ -51,6 +51,25 @@
             "insightType": "dataset_table",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 2,
+              "left": 1,
+              "width": 9,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "# Predicted Next Best Action",
+              "textAlign": "CENTER",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -62,11 +81,11 @@
   "name": "Next Best Action\u0027s Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607114350530
+    "lastModifiedOn": 1607114376837
   },
   "creationTag": {
     "versionNumber": 0,
