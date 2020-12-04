@@ -62,11 +62,11 @@
   "name": "Next Best Action\u0027s Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607100493132
+    "lastModifiedOn": 1607114350530
   },
   "creationTag": {
     "versionNumber": 0,
