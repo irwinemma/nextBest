@@ -62,11 +62,11 @@
   "name": "Next Best Action\u0027s Dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1607098844055
+    "lastModifiedOn": 1607098855354
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,6 +75,7 @@
     },
     "lastModifiedOn": 1606162578091
   },
+  "description": "Overview of the content from the NBA dataset and ",
   "tags": [],
   "customFields": {},
   "checklists": {
