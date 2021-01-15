@@ -21,6 +21,14 @@
     {
       "objectId": "compute_NBA_Evaluated_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "BHQ9yhPT",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_BHQ9yhPT",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
