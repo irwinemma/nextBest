@@ -19,3 +19,4 @@ nba_PyTest_df = nextbestaction_TEST_df # For this sample code, simply copy input
 # Write recipe outputs
 nba_PyTest = dataiku.Dataset("NBA_PyTest")
 nba_PyTest.write_with_schema(nba_PyTest_df)
+
