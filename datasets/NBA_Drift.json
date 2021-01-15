@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1606842693177
+    "lastModifiedOn": 1610738877064
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,16 +94,14 @@
       },
       {
         "name": "drift_score",
-        "type": "double",
-        "comment": "The drift score (between 0 and 1) is low (udner 0.1) if the new dataset and the original dataset are indistinguishable."
+        "type": "double"
       },
       {
         "name": "most_drifted_features",
-        "type": "string",
-        "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+        "type": "string"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
